@@ -6,7 +6,7 @@ variable x
     dup 0= if drop 0 exit then
     dup n ! dup x !
     begin
-         x @ n @ x @ / + 2 /
+         x @ n @ x @ / + 1 rshift
          dup x @ >= if
              drop x @ exit
          then
